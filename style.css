@@ -1,0 +1,259 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.top-bar {
+    background: #ff0050;
+    color: white;
+    padding: 8px;
+}
+.top-bar .btn-light {
+    background-color: #ff0050 !important; /* Pink button */
+    color: white !important;
+    border: none !important; /* Remove white border */
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.top-bar .btn-light:hover {
+    background-color: #e60045 !important; /* Darker pink on hover */
+}
+
+.hero {
+    background-color: #f8f9fa;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.search-box {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+}
+
+#food {
+  margin: 3% 5%;
+
+  font-style: normal;
+  font-weight: 900;
+  color: rgb(51, 51, 51);
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.cook {
+  position: relative;
+  background: url(./images/home-vendor-pk.jpg) center/cover no-repeat;
+  width: 98vw;
+  height: 70vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 5%;
+  margin-bottom: 15%;
+}
+
+.text {
+  background: white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 20px 40px;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  font-weight: bold;
+  margin-left: 5%;
+  margin-bottom: -14%;
+}
+
+.text h3 {
+  margin-bottom: 10px;
+}
+
+.text p {
+  font-weight: normal;
+  color: #333;
+  margin-bottom: 15px;
+}
+.start {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff2b85;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.start:hover {
+  background-color: #c21760;
+  transform: scale(1.05);
+}
+
+
+/* CITIES */
+
+/* Cities Section */
+.cities-section {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #fff;
+}
+
+.cities-section h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout (4 Columns Per Row) */
+.cities-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Ensures 4 cities per row */
+    gap: 15px;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* City Cards */
+.city {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.city img {
+    width: 100%;
+    height: 150px; /* Adjust height */
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* City Labels */
+.city-label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Hover Effect */
+.city:hover {
+    transform: translateY(-5px); /* Moves the whole city card slightly up */
+}
+
+.city:hover img {
+    transform: scale(1.05); /* Slightly zooms in the image */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .cities-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 cities per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .cities-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 cities per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .cities-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 city per row on mobile */
+    }
+}
+/* Section Styling */
+.download-section {
+    background: #ff007f; /* Pink Background */
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Left Content Box */
+.download-content {
+    color: white;
+    max-width: 45%;
+}
+
+.download-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.download-content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.download-content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* QR Code & App Buttons */
+.qr-apps {
+    display: flex;
+    align-items: center;
+}
+
+.qr-code {
+    width: 80px;
+    margin-right: 15px;
+}
+
+.app-buttons img {
+    width: 120px;
+    margin-right: 10px;
+}
+
+/* Right Image */
+.download-image img {
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .download-content {
+        max-width: 100%;
+    }
+
+    .qr-apps {
+        justify-content: center;
+    }
+
+    .download-image img {
+        margin-top: 20px;
+        max-width: 300px;
+    }
+}
